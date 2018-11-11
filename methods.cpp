@@ -22,3 +22,12 @@ void	Show(Continent obj)
 	std::cout << "\tSurface - " << obj.surface << " km^2\n";
 	std::cout << "\tPopulation - " << obj.population << std::endl;
 }
+
+void	Continent::ShowMethod(void)
+{
+	std::cout << "\n[*] Friend Show method.\n\n";
+	std::cout << "\tName - " << name << std::endl;
+	std::cout << "\tHemisphere - " << hemisphere << std::endl;
+	std::cout << "\tSurface - " << surface << " km^2\n";
+	std::cout << "\tPopulation - " << population << std::endl;	
+}

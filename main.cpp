@@ -28,8 +28,11 @@ int main(void)
 	Continent C3;
 
 	C3.Init();
-	Show(C3);	// Why this friend is calling constructors and destructors ?
-	Show(C2);	// Why this friend is calling constructors and destructors ?
-	Show(C1);	// Why this friend is calling constructors and destructors ?
+	Show(C3);			// Why this friend is calling constructors and destructors ?
+	Show(C2);			// Why this friend is calling constructors and destructors ?
+	Show(C1);			// Why this friend is calling constructors and destructors ?
+	// C3.ShowMethod();
+	// C2.ShowMethod();
+	// C1.ShowMethod();
 	return 0;
 }

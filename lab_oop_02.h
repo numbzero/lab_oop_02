@@ -19,9 +19,10 @@ class Continent
 		Continent(Continent &cpy);							// Copy constructor
 		Continent(std::string nm, std::string hmsphr,
 			unsigned long srfc, unsigned long ppltn);		// Parameterized constructor
-		~Continent();										// Default destructor
 		void		Init(void);
+		void		ShowMethod(void);						// Test Show method
 		friend void	Show(Continent obj);					// Friend method
+		~Continent();										// Default destructor
 };
 
 #endif
