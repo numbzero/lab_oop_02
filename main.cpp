@@ -23,7 +23,7 @@ int main(void)
 	system("clear");
 	std::cout << "\t[LAB OOP 02]\n";
 	
-	Continent C1("Africa", "Northern", 	30370000, 1225080510);
+	Continent C1("Africa", "Northern", 30370000, 1225080510);
 	Continent C2 = C1;
 	Continent C3;
 
