@@ -2,7 +2,7 @@
 
 void	Continent::Init(void)
 {
-	std::cout << "\n[*] Init method.\n\n";
+	std::cout << CYAN "\n[*] [method] " RESET " Init.\n\n";
 	std::cout << "\tName: ";
 	std::cin >> name;
 	std::cout << "\tHemisphere: ";
@@ -12,22 +12,31 @@ void	Continent::Init(void)
 	std::cout << "\tPopulation: ";
 	std::cin >> population;
 	std::cin.get();
+#if DEBUG
+	sleep(1);
+#endif
 }
 
 void	Show(Continent obj)
 {
-	std::cout << "\n[*] Friend Show method.\n\n";
+	std::cout << MAGENTA "\n[*] [friend_method] " RESET " Show.\n\n";
 	std::cout << "\tName - " << obj.name << std::endl;
 	std::cout << "\tHemisphere - " << obj.hemisphere << std::endl;
 	std::cout << "\tSurface - " << obj.surface << " km^2\n";
 	std::cout << "\tPopulation - " << obj.population << std::endl;
+#if DEBUG
+	sleep(1);
+#endif
 }
 
 void	Continent::ShowMethod(void)
 {
-	std::cout << "\n[*] Friend Show method.\n\n";
+	std::cout << CYAN "\n[*] [method] " RESET " Show.\n\n";
 	std::cout << "\tName - " << name << std::endl;
 	std::cout << "\tHemisphere - " << hemisphere << std::endl;
 	std::cout << "\tSurface - " << surface << " km^2\n";
 	std::cout << "\tPopulation - " << population << std::endl;	
+#if DEBUG
+	sleep(1);
+#endif
 }

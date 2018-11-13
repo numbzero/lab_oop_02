@@ -21,7 +21,7 @@
 int main(void)
 {
 	system("clear");
-	std::cout << "\t[LAB OOP 02]\n";
+	std::cout << BLUE "\t[LAB OOP 02]\n" RESET;
 	
 	Continent C1("Africa", "Northern", 30370000, 1225080510);
 	Continent C2 = C1;
@@ -31,8 +31,12 @@ int main(void)
 	Show(C3);			// Why this friend is calling constructors and destructors ?
 	Show(C2);			// Why this friend is calling constructors and destructors ?
 	Show(C1);			// Why this friend is calling constructors and destructors ?
-	// C3.ShowMethod();
-	// C2.ShowMethod();
-	// C1.ShowMethod();
+
+#if DEBUG
+	C3.ShowMethod();
+	C2.ShowMethod();
+	C1.ShowMethod();
+#endif
+
 	return 0;
 }
