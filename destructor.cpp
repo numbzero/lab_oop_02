@@ -4,7 +4,7 @@ Continent::~Continent(void)
 {
 
 #if DEBUG
-	std::cout << RED "\n[+] [default_destructor]" RESET " Object is being deleted!\n";
+	std::cout << RED "\n[+] [default_destructor] " RESET "Object is being deleted!\n";
 	sleep(1);
 #endif
 

@@ -2,7 +2,7 @@
 
 void	Continent::Init(void)
 {
-	std::cout << CYAN "\n[*] [method] " RESET " Init.\n\n";
+	std::cout << CYAN "\n[*] [method] " RESET "Init.\n\n";
 	std::cout << "\tName: ";
 	std::cin >> name;
 	std::cout << "\tHemisphere: ";
@@ -19,7 +19,7 @@ void	Continent::Init(void)
 
 void	Show(Continent obj)
 {
-	std::cout << MAGENTA "\n[*] [friend_method] " RESET " Show.\n\n";
+	std::cout << MAGENTA "\n[*] [friend_method] " RESET "Show.\n\n";
 	std::cout << "\tName - " << obj.name << std::endl;
 	std::cout << "\tHemisphere - " << obj.hemisphere << std::endl;
 	std::cout << "\tSurface - " << obj.surface << " km^2\n";
@@ -31,7 +31,7 @@ void	Show(Continent obj)
 
 void	Continent::ShowMethod(void)
 {
-	std::cout << CYAN "\n[*] [method] " RESET " Show.\n\n";
+	std::cout << CYAN "\n[*] [method] " RESET "Show.\n\n";
 	std::cout << "\tName - " << name << std::endl;
 	std::cout << "\tHemisphere - " << hemisphere << std::endl;
 	std::cout << "\tSurface - " << surface << " km^2\n";

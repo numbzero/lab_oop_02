@@ -28,9 +28,9 @@ int main(void)
 	Continent C3;
 
 	C3.Init();
-	Show(C3);			// Why this friend is calling constructors and destructors ? Already know.
-	Show(C2);			// Why this friend is calling constructors and destructors ? Already know.
-	Show(C1);			// Why this friend is calling constructors and destructors ? Already know.
+	Show(C3);			// Why this friend is calling constructors and destructors ?
+	Show(C2);			// Why this friend is calling constructors and destructors ?
+	Show(C1);			// Why this friend is calling constructors and destructors ?
 
 #if DEBUG
 	C3.ShowMethod();
